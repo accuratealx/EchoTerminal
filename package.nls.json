@@ -1,0 +1,11 @@
+{
+    "extension.displayName": "Echo terminal",
+    "extension.description": "Intercepting terminal output with additional processing",
+    "config.title": "Echo terminal",
+    "config.enabled": "Enable / disable the plugin",
+    "config.findTerminalMask": "Search mask for terminals to intercept. Multiple values can be specified separated by commas (project1, syst), empty - all terminals)",
+    "config.singleTerminal": "Use a shared Echo terminal",
+    "config.LogType": "Type of intercepted log",
+    "config.LogType.slog": "Standard slog {\"time\": \"...\",\"level\":\"debug\"}",
+    "config.LogType.string": "Standard string separated by \\r\\n, \\n, \\r"
+}

@@ -1,0 +1,74 @@
+{
+  "name": "echo-terminal",
+  "displayName": "%extension.displayName%",
+  "description": "%extension.description%",
+  "version": "0.0.1",
+  "publisher": "Творческий Человек",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/your-repo.git"
+  },
+  "icon": "images/icon.png",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "l10n": "./l10n",
+  "main": "./out/main.js",
+  "contributes": {
+    "commands": [],
+    "configuration": {
+      "title": "%config.title%",
+      "properties": {
+        "EchoTerminal.Enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "%config.enabled%"
+        },
+        "EchoTerminal.FindTerminalMask": {
+          "type": "string",
+          "default": "",
+          "description": "%config.findTerminalMask%"
+        },
+        "EchoTerminal.SingleTerminal": {
+          "type": "boolean",
+          "default": true,
+          "description": "%config.singleTerminal%"
+        },
+        "EchoTerminal.LogType": {
+          "type": "string",
+          "default": "slog",
+          "enum": [
+            "string",
+            "slog"
+          ],
+          "enumDescriptions": [
+            "%config.LogType.string%",
+            "%config.LogType.slog%"            
+          ],
+          "description": "%config.LogType%"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:verbose": "jest --verbose",
+    "test:ci": "jest --ci --coverage --maxWorkers=2"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^25.3.5",
+    "@types/vscode": "^1.85.0",
+    "@vscode/l10n-dev": "^0.0.35",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.6",
+    "typescript": "^5.9.3"
+  }
+}

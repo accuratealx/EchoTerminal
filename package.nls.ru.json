@@ -1,0 +1,11 @@
+{
+    "extension.displayName": "Эхо терминал",
+    "extension.description": "Перехват вывода терминалов с дополнительной обработкой",
+    "config.title": "Эхо терминал",
+    "config.enabled": "Включить / выключить работу плагина",
+    "config.findTerminalMask": "Маска поиска терминалов для перехвата. Можно указывать несколько значений через запятую (project1, syst), пусто - все терминалы)",
+    "config.singleTerminal": "Использовать общий Эхо терминал",
+    "config.LogType": "Тип перехватываемого лога",
+    "config.LogType.slog": "Стандартный slog {\"time\": \"...\",\"level\":\"debug\"}",
+    "config.LogType.string": "Стандартная строка разделенная \\r\\n, \\n, \\r"
+}
