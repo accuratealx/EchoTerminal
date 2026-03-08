@@ -32,11 +32,6 @@
           "default": "",
           "description": "%config.findTerminalMask%"
         },
-        "EchoTerminal.SingleTerminal": {
-          "type": "boolean",
-          "default": true,
-          "description": "%config.singleTerminal%"
-        },
         "EchoTerminal.LogType": {
           "type": "string",
           "default": "slog",
