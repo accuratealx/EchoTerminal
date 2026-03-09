@@ -1,0 +1,15 @@
+.vscode
+src/**
+**/*.ts
+!out/**/*.js
+tsconfig.json
+makefile
+jest.config.js
+.vscode-test/**
+coverage/**
+.gitignore
+.git/**
+.github/**
+.gitattributes
+*.vsix
+tmp
