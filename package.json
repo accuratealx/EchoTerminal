@@ -2,7 +2,7 @@
   "name": "echo-terminal",
   "displayName": "%extension.displayName%",
   "description": "%extension.description%",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "AccurateAlx",
   "repository": {
     "type": "git",
