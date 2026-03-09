@@ -10,7 +10,7 @@
 
 ## Возможности:
 - Отдельный терминал для вывода
-- Настройка перехват терминалов по маске
+- Настройка перехвата терминалов по маске
 - Настройка формата вывода
 - Поддержка форматов
   - **string** - вывод без обработки
@@ -19,7 +19,12 @@
   - Русский
   - Английский
 
-## Скриншоты
+## Скриншоты:
 ![](https://github.com/accuratealx/EchoTerminal/raw/master/screens/screen1.png)
 ![](https://github.com/accuratealx/EchoTerminal/raw/master/screens/screen2.png)
 ![](https://github.com/accuratealx/EchoTerminal/raw/master/screens/screen3.png)
+
+## План доработок:
+- Добавить поддержку slog text вида time="..." level=INFO msg="user logged in" user_id=123 success=true
+- Другие форматы
+- Поддержка дополнительных языков
