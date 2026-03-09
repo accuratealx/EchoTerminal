@@ -29,15 +29,15 @@ export class EchoTerminalLineFormatterSlog implements types.EchoTerminalLineForm
             const stringLines = processedStr.split(/\r?\n/).filter(line => line !== '');
             
             if (stringLines.length === 1) {
-                lines.push(`${indent}${key}: "${stringLines[0]}"\r`);
+                lines.push(`${indent}${key}: "${stringLines[0]}"`);
             } else {
-                lines.push(`${indent}${key}: "\r`);
+                lines.push(`${indent}${key}: "`);
 
                 stringLines.forEach((line, index) => {
-                    lines.push(`${indent}  ${line}\r`);
+                    lines.push(`${indent}  ${line}`);
                 });
                 
-                lines.push(`${indent}"\r`);
+                lines.push(`${indent}"`);
             }
             
             return lines;
@@ -49,12 +49,12 @@ export class EchoTerminalLineFormatterSlog implements types.EchoTerminalLineForm
             const stringLines = processedStr.split(/\r?\n/);
             
             if (stringLines.length === 1) {
-                lines.push(`${indent}"${stringLines[0]}"\r`);
+                lines.push(`${indent}"${stringLines[0]}"`);
             } else {
                 lines.push(`${indent}"`);
                 
                 stringLines.forEach((line, index) => {
-                    lines.push(`${indent}  ${line}\r`);
+                    lines.push(`${indent}  ${line}`);
                 });
                 
                 lines.push(`${indent}"`);
@@ -68,59 +68,59 @@ export class EchoTerminalLineFormatterSlog implements types.EchoTerminalLineForm
             
             if (key !== null) {
                 if (value === null) {
-                    result.push(`${indent}${key}: null\r`);
+                    result.push(`${indent}${key}: null`);
                 } else if (Array.isArray(value)) {
                     if (value.length === 0) {
-                        result.push(`${indent}${key}: []\r`);
+                        result.push(`${indent}${key}: []`);
                     } else {
-                        result.push(`${indent}${key}: [\r`);
+                        result.push(`${indent}${key}: [`);
                         value.forEach((item, index) => {
                             processValue(item, indentLevel + 1, String(index));
                         });
-                        result.push(`${indent}]\r`);
+                        result.push(`${indent}]`);
                     }
                 } else if (typeof value === 'object' && value !== null) {
                     const objValue = value as Record<string, unknown>;
                     const keys = Object.keys(objValue);
                     
                     if (keys.length === 0) {
-                        result.push(`${indent}${key}: {}\r`);
+                        result.push(`${indent}${key}: {}`);
                     } else {
-                        result.push(`${indent}${key}: {\r`);
+                        result.push(`${indent}${key}: {`);
                         for (const [nestedKey, nestedValue] of Object.entries(objValue)) {
                             processValue(nestedValue, indentLevel + 1, nestedKey);
                         }
-                        result.push(`${indent}}\r`);
+                        result.push(`${indent}}`);
                     }
                 } else if (typeof value === 'string') {
                     const stringLines = processStringValue(value, indent, key);
                     result.push(...stringLines);
                 } else {
-                    result.push(`${indent}${key}: ${String(value)}\r`);
+                    result.push(`${indent}${key}: ${String(value)}`);
                 }
             } else {
                 if (Array.isArray(value)) {
                     if (value.length === 0) {
-                        result.push(`[]\r`);
+                        result.push(`[]`);
                     } else {
-                        result.push(`[\r`);
+                        result.push(`[`);
                         value.forEach((item, index) => {
                             processValue(item, 1, String(index));
                         });
-                        result.push(`]\r`);
+                        result.push(`]`);
                     }
                 } else if (typeof value === 'object' && value !== null) {
                     const objValue = value as Record<string, unknown>;
                     const keys = Object.keys(objValue);
                     
                     if (keys.length === 0) {
-                        result.push(`{}\r`);
+                        result.push(`{}`);
                     } else {
-                        result.push(`{\r`);
+                        result.push(`{`);
                         for (const [nestedKey, nestedValue] of Object.entries(objValue)) {
                             processValue(nestedValue, 1, nestedKey);
                         }
-                        result.push(`}\r`);
+                        result.push(`}`);
                     }
                 } else if (typeof value === 'string') {
                     const stringLines = processStringValueWithoutKey(value, '');

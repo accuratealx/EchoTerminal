@@ -1,13 +1,10 @@
 import * as vscode from 'vscode'
-import * as osutils from './osutils'
 
 export class EchoTerminal {
     private writeEmitter = new vscode.EventEmitter<string>();
     private terminal?: vscode.Terminal;
     private isVisible: boolean = false;
     private name: string = "";
-    private eol: string = osutils.EOL();
-
 
     constructor(aname: string) {
         this.name = aname;
@@ -53,7 +50,7 @@ export class EchoTerminal {
     }
 
     public writeln(text: string) {
-        this.write(text + this.eol);
+        this.write(text + '\n\r');
     }
 }
 
