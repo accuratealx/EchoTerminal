@@ -20,6 +20,6 @@
   - Английский
 
 ## Скриншоты
-![](https://github.com/accuratealx/EchoTerminal/raw/master/screenshots/screen1.png)
-![](https://github.com/accuratealx/EchoTerminal/raw/master/screenshots/screen2.png)
-![](https://github.com/accuratealx/EchoTerminal/raw/master/screenshots/screen3.png)
+![](https://github.com/accuratealx/EchoTerminal/raw/master/screens/screen1.png)
+![](https://github.com/accuratealx/EchoTerminal/raw/master/screens/screen2.png)
+![](https://github.com/accuratealx/EchoTerminal/raw/master/screens/screen3.png)
