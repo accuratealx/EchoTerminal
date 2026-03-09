@@ -23,6 +23,7 @@ export function activate(context: vscode.ExtensionContext) {
         if (e.affectsConfiguration('EchoTerminal')) {
             cfg.Reload();
             mgr.updateConfig(cfg);
+            journal.logInfo('settings reloaded');
         }
     })
 

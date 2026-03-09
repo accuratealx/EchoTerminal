@@ -58,7 +58,6 @@ export class EchoTerminalManager {
     public updateConfig(acfg: config.EchoTermnalConfig) {
         this.cfg = acfg;
         this.updateCommonTerminalVisible();
-        this.journal.logInfo('settings reloaded');
     }
 
     //Основной обработчик событий записи в терминалы
