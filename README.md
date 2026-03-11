@@ -8,6 +8,9 @@
 ![](https://img.shields.io/github/last-commit/accuratealx/EchoTerminal)
 ![](https://img.shields.io/github/languages/top/accuratealx/EchoTerminal)
 
+## Установка:
+- Открыть окно поиска в vscode (ctrl+P) и ввести **"ext install AccurateAlx.echo-terminal"**
+
 ## Возможности:
 - Отдельный терминал для вывода
 - Настройка перехвата терминалов по маске
@@ -18,6 +21,9 @@
 - Поддержка языков:
   - Русский
   - Английский
+
+## Ссылки:
+- [Marketplace](https://marketplace.visualstudio.com/items?itemName=AccurateAlx.echo-terminal)
 
 ## Скриншоты:
 ![](https://github.com/accuratealx/EchoTerminal/raw/master/screens/screen1.png)
