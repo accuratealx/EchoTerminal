@@ -1,4 +1,6 @@
 {
     "Echo terminal (common)": "Эхо терминал (общий)",
-    "Echo terminal": "Эхо терминал"
+    "Echo terminal (%s)": "Эхо терминал (%s)",
+    "Echo terminal": "Эхо терминал",
+    "The shared echo terminal cannot be closed. To hide it, use the Enabled setting": "Общий эхо терминал нельзя закрыть. Для сокрытия воспользуйтесь настройкой Еnabled"
 }

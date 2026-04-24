@@ -1,11 +1,12 @@
-import { parse } from 'node:path';
 import * as parser from './EchoTerminalLineParser'
 import * as str from './EchoTerminalLineParserString'
 import * as slog from './EchoTerminalLineParserSlog'
+import * as keyvalue from './EchoTerminalLineParserKeyValue'
 
 enum LineParserType {
     string = "string",
-    slog = "slog"
+    slog = "slog",
+    keyvalue = "keyvalue"
 }
 
 export class EchoTerminalLineParserManager {
@@ -14,6 +15,7 @@ export class EchoTerminalLineParserManager {
     constructor() {
         this.parsers.set(LineParserType.string, new str.EchoTerminalLineParserString())
         this.parsers.set(LineParserType.slog, new slog.EchoTerminalLineParserSlog())
+        this.parsers.set(LineParserType.keyvalue, new keyvalue.EchoTerminalLineParserKeyValue())
     }
 
     public dispose() {}

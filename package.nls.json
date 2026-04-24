@@ -7,5 +7,7 @@
     "config.singleTerminal": "Use a shared Echo terminal",
     "config.LogType": "Type of intercepted log",
     "config.LogType.slog": "Standard slog {\"time\": \"...\",\"level\":\"debug\"}",
-    "config.LogType.string": "Standard string separated by \\r\\n, \\n, \\r"
+    "config.LogType.string": "Standard string separated by \\r\\n, \\n, \\r",
+    "config.LogType.keyvalue": "Key=Value string, key1=\"value\"",
+    "config.InitialDelay": "Terminal initialization delay (ms). Some terminals don't report full initialization in the VSCode. If you experience display issues, increase this value"
 }

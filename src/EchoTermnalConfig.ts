@@ -6,6 +6,7 @@ export class EchoTermnalConfig {
     singleTerminal: boolean = true;
     logType: string = "";
     findTerminalMasks: string[] = [];
+    initialDelay: number = 1000;
 
     constructor() {
         this.Reload();
@@ -20,9 +21,11 @@ export class EchoTermnalConfig {
         this.enable = config.get<boolean>('Enabled', true);
         this.singleTerminal = config.get<boolean>('SingleTerminal', true);
         this.logType = config.get<string>('LogType', "slog");
+        this.initialDelay = config.get<number>('InitialDelay', 1000);
 
         //Подготовим список масок для поиска по имени терминала
         let s = config.get<string>('FindTerminalMask', '').trim();
+        this.findTerminalMasks = [];
         const parts = s.split(",")
         for (let i = 0; i < parts.length; i++) {
             const s = parts[i].trim().toLowerCase();
@@ -46,5 +49,9 @@ export class EchoTermnalConfig {
 
     public LogType(): string {
         return this.logType;
+    }
+
+    public InitialDelay(): number {
+        return this.initialDelay;
     }
 }

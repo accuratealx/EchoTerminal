@@ -1,11 +1,12 @@
-import { parse } from 'node:path';
 import * as formater from './EchoTerminalLineFormatter'
 import * as str from './EchoTerminalLineFormatterString'
 import * as slog from './EchoTerminalLineFormatterSlog'
+import * as keyvalue from './EchoTerminalLineFormatterKeyValue'
 
 enum LineParserType {
     string = "string",
-    slog = "slog"
+    slog = "slog",
+    keyvalue = "keyvalue"
 }
 
 export class EchoTerminalLineFormatterManager {
@@ -14,6 +15,7 @@ export class EchoTerminalLineFormatterManager {
     constructor() {
         this.fmts.set(LineParserType.string, new str.EchoTerminalLineFormatterString())
         this.fmts.set(LineParserType.slog, new slog.EchoTerminalLineFormatterSlog())
+        this.fmts.set(LineParserType.keyvalue, new keyvalue.EchoTerminalLineFormatterKeyValue())
     }
 
     public dispose() {}

@@ -2,7 +2,7 @@
   "name": "echo-terminal",
   "displayName": "%extension.displayName%",
   "description": "%extension.description%",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "publisher": "AccurateAlx",
   "repository": {
     "type": "git",
@@ -34,16 +34,28 @@
         },
         "EchoTerminal.LogType": {
           "type": "string",
-          "default": "slog",
+          "default": "keyvalue",
           "enum": [
             "string",
-            "slog"
+            "slog",
+            "keyvalue"
           ],
           "enumDescriptions": [
             "%config.LogType.string%",
-            "%config.LogType.slog%"            
+            "%config.LogType.slog%",
+            "%config.LogType.keyvalue%"
           ],
           "description": "%config.LogType%"
+        },
+        "EchoTerminal.SingleTerminal": {
+          "type": "boolean",
+          "default": true,
+          "description": "%config.singleTerminal%"
+        },
+        "EchoTerminal.InitialDelay": {
+          "type": "integer",
+          "default": 1000,
+          "description": "%config.InitialDelay%"
         }
       }
     }
@@ -62,8 +74,8 @@
     "@types/node": "^25.3.5",
     "@types/vscode": "^1.85.0",
     "@vscode/l10n-dev": "^0.0.35",
-    "jest": "^30.2.0",
-    "ts-jest": "^29.4.6",
+    "jest": "^30.3.0",
+    "ts-jest": "^29.4.9",
     "typescript": "^5.9.3"
   }
 }

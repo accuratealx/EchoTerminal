@@ -1,6 +1,5 @@
 import { describe, expect, test, beforeEach } from '@jest/globals';
-import { EchoTerminalLineParserSlog } from './EchoTerminalLineParserSlog';
-import { log } from 'node:console';
+import { EchoTerminalLineParserSlog } from '../EchoTerminalLineParserSlog';
 
 describe('EchoTerminalLineParserSlog', () => {
     let parser: EchoTerminalLineParserSlog;

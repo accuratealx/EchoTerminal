@@ -9,22 +9,26 @@
 ![](https://img.shields.io/github/languages/top/accuratealx/EchoTerminal)
 
 ## Возможности:
-- Отдельный терминал для вывода
-- Настройка перехвата терминалов по маске
-- Настройка формата вывода
+
+- Общий терминал для вывода логов из всех теминалов
+- Возможность выводить лог от каждого теминала в отдельный эхо терминал
+- Перехвата логов терминала по имени
 - Поддержка форматов
   - **string** - вывод без обработки
   - **slog** - структурный лог вида {"time":"...","level":"INFO","msg":"user logged in","user_id":123,"success":true}
+  - **keyvalue** - лог вида key1=value1 key2="value 2"
 - Поддержка языков:
   - Русский
   - Английский
 
 ## Скриншоты:
+
 ![](https://github.com/accuratealx/EchoTerminal/raw/master/screens/screen1.png)
 ![](https://github.com/accuratealx/EchoTerminal/raw/master/screens/screen2.png)
 ![](https://github.com/accuratealx/EchoTerminal/raw/master/screens/screen3.png)
 
 ## План доработок:
+
 - Добавить поддержку slog text вида time="..." level=INFO msg="user logged in" user_id=123 success=true
 - Другие форматы
 - Поддержка дополнительных языков

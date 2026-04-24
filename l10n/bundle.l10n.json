@@ -1,4 +1,6 @@
 {
     "Echo terminal (common)": "Echo terminal (common)",
-    "Echo terminal": "Echo terminal"
+    "Echo terminal (%s)": "Echo terminal (%s)",
+    "Echo terminal": "Echo terminal",
+    "The shared echo terminal cannot be closed. To hide it, use the Enabled setting": "The shared echo terminal cannot be closed. To hide it, use the Enabled setting"
 }

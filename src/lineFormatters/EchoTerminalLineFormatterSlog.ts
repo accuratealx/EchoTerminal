@@ -1,4 +1,4 @@
-import * as types from './EchoTerminalLineFormatter' 
+import * as types from './EchoTerminalLineFormatter'
 
 export class EchoTerminalLineFormatterSlog implements types.EchoTerminalLineFormatter {
     format(rawstr: string): string[] {
