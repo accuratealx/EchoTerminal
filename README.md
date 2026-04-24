@@ -8,6 +8,9 @@
 ![](https://img.shields.io/github/last-commit/accuratealx/EchoTerminal)
 ![](https://img.shields.io/github/languages/top/accuratealx/EchoTerminal)
 
+## Установка:
+- Открыть окно поиска в vscode (ctrl+P) и ввести **"ext install AccurateAlx.echo-terminal"**
+
 ## Возможности:
 
 - Общий терминал для вывода логов из всех теминалов
@@ -20,6 +23,9 @@
 - Поддержка языков:
   - Русский
   - Английский
+
+## Ссылки:
+- [Marketplace](https://marketplace.visualstudio.com/items?itemName=AccurateAlx.echo-terminal)
 
 ## Скриншоты:
 
