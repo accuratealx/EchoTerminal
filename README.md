@@ -35,6 +35,5 @@
 
 ## План доработок:
 
-- Добавить поддержку slog text вида time="..." level=INFO msg="user logged in" user_id=123 success=true
 - Другие форматы
 - Поддержка дополнительных языков
